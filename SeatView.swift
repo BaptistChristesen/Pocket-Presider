@@ -30,7 +30,7 @@ struct SeatView: View {
     var name18 = ""
     var name19 = ""
     var name20 = ""
-    func new seat View {
+    var body: some View {
         NavigationView {
         VStack {
             HStack {
