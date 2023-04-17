@@ -79,14 +79,14 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct SeatView: View {
-    @State var name: String
-    var body: some View {
-        NavigationLink("\(name)") {
-            TextField("name", text: $name)
-        }
-        }
-    }
+//struct SeatView: View {
+//    @State var name: String
+//    var body: some View {
+//        NavigationLink("\(name)") {
+//            TextField("name", text: $name)
+//        }
+//        }
+//    }
 struct CustomTextField: View {
     let placeholder : String
     let variable : Binding<String>
