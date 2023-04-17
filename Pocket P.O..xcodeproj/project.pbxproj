@@ -12,6 +12,7 @@
 		30227A3B29E999D300891754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30227A3A29E999D300891754 /* Assets.xcassets */; };
 		30227A3E29E999D300891754 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30227A3D29E999D300891754 /* Preview Assets.xcassets */; };
 		30227A4729ED959F00891754 /* SeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30227A4629ED959F00891754 /* SeatView.swift */; };
+		30227A4B29ED968E00891754 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30227A4A29ED968E00891754 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		30227A3A29E999D300891754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30227A3D29E999D300891754 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30227A4629ED959F00891754 /* SeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatView.swift; sourceTree = "<group>"; };
+		30227A4A29ED968E00891754 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 		30227A2A29E999D100891754 = {
 			isa = PBXGroup;
 			children = (
+				30227A4A29ED968E00891754 /* CustomButton.swift */,
 				30227A4629ED959F00891754 /* SeatView.swift */,
 				30227A3529E999D100891754 /* Pocket P.O. */,
 				30227A3429E999D100891754 /* Products */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30227A4B29ED968E00891754 /* CustomButton.swift in Sources */,
 				30227A4729ED959F00891754 /* SeatView.swift in Sources */,
 				30227A3929E999D100891754 /* ContentView.swift in Sources */,
 				30227A3729E999D100891754 /* Pocket_P_O_App.swift in Sources */,

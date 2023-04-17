@@ -12,24 +12,20 @@ struct ContentView: View {
         NavigationView {
             VStack(spacing: 40) {
                 VStack(spacing: 20) {
-                    Text("Country Flag Game")
+                    Text("Pocket P.O.")
                         .font(.title)
                         .fontWeight(.heavy)
-                        .foregroundColor(.yellow)
-                    Text("Ready to test your skilz?")
-                        .foregroundColor(.yellow)
+                        .foregroundColor(.blue)
                 }
                 NavigationLink {
-                    QuestionView()
-                        .environmentObject(quizManager)
+                    //SeatView()
+                        //.environmentObject
                 } label: {
                     CustomButton(text: "Start")
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .ignoresSafeArea(.all)
-            .background(.cyan)
-        }
+            .ignoresSafeArea(.all)        }
     }
 }
 
