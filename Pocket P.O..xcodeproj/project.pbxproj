@@ -37,7 +37,6 @@
 		30227A2A29E999D100891754 = {
 			isa = PBXGroup;
 			children = (
-				30227A4629ED959F00891754 /* SeatView.swift */,
 				30227A3529E999D100891754 /* Pocket P.O. */,
 				30227A3429E999D100891754 /* Products */,
 			);
@@ -56,6 +55,7 @@
 			children = (
 				30227A3629E999D100891754 /* Pocket_P_O_App.swift */,
 				30227A3829E999D100891754 /* ContentView.swift */,
+				30227A4629ED959F00891754 /* SeatView.swift */,
 				30227A3A29E999D300891754 /* Assets.xcassets */,
 				30227A3C29E999D300891754 /* Preview Content */,
 			);

@@ -5,7 +5,10 @@
 //  Created by caden christesen on 4/17/23.
 //
 
+import SwiftUI
+
 struct SeatView: View {
+    
     var name00 = ""
     var name01 = ""
     var name02 = ""
@@ -27,9 +30,9 @@ struct SeatView: View {
     var name18 = ""
     var name19 = ""
     var name20 = ""
-    new seat View {
-        NavigationView{
-        VStack{
+    func new seat View {
+        NavigationView {
+        VStack {
             HStack {
                 CustomTextField(placeholder: "Name", variable: $name00, frameWidth: 120)
                 CustomTextField(placeholder: "Name", variable: $name01, frameWidth: 120)
