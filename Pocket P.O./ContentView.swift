@@ -1,4 +1,4 @@
-//
+ //
 //  ContentView.swift
 //  Pocket P.O.
 //
@@ -9,13 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+        VStack{
+            ForEach(0..<7) { row in
+                HStack {
+                    ForEach(0..<3) { coll in
+                        SeatView(name: "Seating chart")
+                            .padding()
+                    }
+                }
+            }
+            }
         }
-        .padding()
     }
 }
 
