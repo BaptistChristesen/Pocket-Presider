@@ -18,8 +18,7 @@ struct ContentView: View {
                         .foregroundColor(.blue)
                 }
                 NavigationLink {
-                    //SeatView()
-                        //.environmentObject
+                    SeatView()
                 } label: {
                     CustomButton(text: "Start")
                 }
