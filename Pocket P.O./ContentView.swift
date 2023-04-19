@@ -12,7 +12,7 @@ struct ContentView: View {
         NavigationView {
             VStack(spacing: 40) {
                 VStack(spacing: 20) {
-                    Text("Pocket P.O.")
+                    Text("Welcome to Pocket P.O.")
                         .font(.title)
                         .fontWeight(.heavy)
                         .foregroundColor(.blue)
@@ -20,7 +20,17 @@ struct ContentView: View {
                 NavigationLink {
                     SeatView()
                 } label: {
-                    CustomButton(text: "Start")
+                    CustomButton(text: "Seating Chart")
+                }
+                NavigationLink {
+                    InstructionView()
+                } label: {
+                    CustomButton(text: "PO Instructions")
+                }
+                NavigationLink {
+                    SpeakingView()
+                } label: {
+                    CustomButton(text: "Speaking Order")
                 }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
