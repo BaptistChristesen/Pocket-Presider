@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var names = [Name](repeating:Name(), count: 21)
     var body: some View {
         NavigationView {
             VStack(spacing: 40) {
@@ -18,7 +19,7 @@ struct ContentView: View {
                         .foregroundColor(.blue)
                 }
                 NavigationLink {
-                    SeatView()
+                    SeatView(names: $names)
                 } label: {
                     CustomButton(text: "Seating Chart")
                 }

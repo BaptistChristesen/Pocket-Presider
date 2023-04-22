@@ -8,44 +8,44 @@
 import SwiftUI
 
 struct SeatView: View {
-    @State private var names = Names()
+    @Binding var names: [Name]
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
-                    CustomTextField(placeholder: "Name", variable: $names.name00, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name01, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name02, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[0].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[1].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[2].name, frameWidth: 120)
                 }
                 HStack {
-                    CustomTextField(placeholder: "Name", variable: $names.name03, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name04, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name05, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[3].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[4].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[5].name, frameWidth: 120)
                 }
                 HStack {
-                    CustomTextField(placeholder: "Name", variable: $names.name06, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name07, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name08, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[6].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[7].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[8].name, frameWidth: 120)
                 }
                 HStack {
-                    CustomTextField(placeholder: "Name", variable: $names.name09, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name10, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name11, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[9].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[10].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[11].name, frameWidth: 120)
                 }
                 HStack {
-                    CustomTextField(placeholder: "Name", variable: $names.name12, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name13, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name14, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[12].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[13].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[14].name, frameWidth: 120)
                 }
                 HStack {
-                    CustomTextField(placeholder: "Name", variable: $names.name15, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name16, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name17, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[15].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[16].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[17].name, frameWidth: 120)
                 }
                 HStack {
-                    CustomTextField(placeholder: "Name", variable: $names.name18, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name19, frameWidth: 120)
-                    CustomTextField(placeholder: "Name", variable: $names.name20, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[18].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[19].name, frameWidth: 120)
+                    CustomTextField(placeholder: "Name", variable: $names[20].name, frameWidth: 120)
                 }
             }
         }
@@ -79,27 +79,9 @@ struct CustomTextField: View {
     }
 }
 
-struct Names {
-    var name00 = ""
-    var name01 = ""
-    var name02 = ""
-    var name03 = ""
-    var name04 = ""
-    var name05 = ""
-    var name06 = ""
-    var name07 = ""
-    var name08 = ""
-    var name09 = ""
-    var name10 = ""
-    var name11 = ""
-    var name12 = ""
-    var name13 = ""
-    var name14 = ""
-    var name15 = ""
-    var name16 = ""
-    var name17 = ""
-    var name18 = ""
-    var name19 = ""
-    var name20 = ""
+struct Name {
+    var name = ""
+    var color = Color.black
+    
 }
 
