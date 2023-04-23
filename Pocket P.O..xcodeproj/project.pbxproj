@@ -15,6 +15,7 @@
 		30227A4D29ED98E000891754 /* SeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30227A4C29ED98E000891754 /* SeatView.swift */; };
 		30227A5329F0361200891754 /* InstructionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30227A5229F0361200891754 /* InstructionView.swift */; };
 		30227A5529F0361B00891754 /* SpeakingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30227A5429F0361B00891754 /* SpeakingView.swift */; };
+		30227A5729F4AED400891754 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30227A5629F4AED400891754 /* TimerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		30227A4C29ED98E000891754 /* SeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatView.swift; sourceTree = "<group>"; };
 		30227A5229F0361200891754 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		30227A5429F0361B00891754 /* SpeakingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakingView.swift; sourceTree = "<group>"; };
+		30227A5629F4AED400891754 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 		30227A2A29E999D100891754 = {
 			isa = PBXGroup;
 			children = (
+				30227A5629F4AED400891754 /* TimerView.swift */,
 				30227A4C29ED98E000891754 /* SeatView.swift */,
 				30227A4A29ED968E00891754 /* CustomButton.swift */,
 				30227A3529E999D100891754 /* Pocket P.O. */,
@@ -149,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30227A5729F4AED400891754 /* TimerView.swift in Sources */,
 				30227A5529F0361B00891754 /* SpeakingView.swift in Sources */,
 				30227A4B29ED968E00891754 /* CustomButton.swift in Sources */,
 				30227A4D29ED98E000891754 /* SeatView.swift in Sources */,

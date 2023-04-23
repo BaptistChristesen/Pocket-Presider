@@ -33,6 +33,11 @@ struct ContentView: View {
                 } label: {
                     CustomButton(text: "Speaking Order")
                 }
+                NavigationLink {
+                    TimerView()
+                } label: {
+                    CustomButton(text: "Timer")
+                }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea(.all)        }
