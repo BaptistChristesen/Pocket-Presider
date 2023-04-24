@@ -25,7 +25,7 @@
 		30227A3A29E999D300891754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30227A3D29E999D300891754 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		30227A4A29ED968E00891754 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
-		30227A4C29ED98E000891754 /* SeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeatView.swift; sourceTree = "<group>"; };
+		30227A4C29ED98E000891754 /* SeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SeatView.swift; path = ../SeatView.swift; sourceTree = "<group>"; };
 		30227A5229F0361200891754 /* InstructionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionView.swift; sourceTree = "<group>"; };
 		30227A5429F0361B00891754 /* SpeakingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakingView.swift; sourceTree = "<group>"; };
 		30227A5629F4AED400891754 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
@@ -45,9 +45,6 @@
 		30227A2A29E999D100891754 = {
 			isa = PBXGroup;
 			children = (
-				30227A5629F4AED400891754 /* TimerView.swift */,
-				30227A4C29ED98E000891754 /* SeatView.swift */,
-				30227A4A29ED968E00891754 /* CustomButton.swift */,
 				30227A3529E999D100891754 /* Pocket P.O. */,
 				30227A3429E999D100891754 /* Products */,
 			);
@@ -65,9 +62,12 @@
 			isa = PBXGroup;
 			children = (
 				30227A3629E999D100891754 /* Pocket_P_O_App.swift */,
+				30227A4A29ED968E00891754 /* CustomButton.swift */,
 				30227A3829E999D100891754 /* ContentView.swift */,
 				30227A5229F0361200891754 /* InstructionView.swift */,
+				30227A4C29ED98E000891754 /* SeatView.swift */,
 				30227A5429F0361B00891754 /* SpeakingView.swift */,
+				30227A5629F4AED400891754 /* TimerView.swift */,
 				30227A3A29E999D300891754 /* Assets.xcassets */,
 				30227A3C29E999D300891754 /* Preview Content */,
 			);
