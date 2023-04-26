@@ -7,29 +7,31 @@
 
 import SwiftUI
 
+
 struct TimerView: View {
+    @State private var timeRemaining = 10 // change this to set the countdown time
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+
     var body: some View {
-        Text("Hello, World!")
-    }
-}
-class ViewController: UIViewController {
-    @State var countdownLabel: UILabel!
-    var timer = Timer()
-    var countdownTime = 60
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        countdownLabel.text = "\(countdownTime)"
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateCountdown), userInfo: nil, repeats: true)
-    }
-    @objc func updateCountdown() {
-        countdownTime -= 1
-        countdownLabel.text = "\(countdownTime)"
-        if countdownTime == 0 {
-            timer.invalidate()
+        VStack {
+            Text("Time Remaining: \(timeRemaining)")
+                .font(.headline)
+                .padding()
+            Button(action: {
+                // start the countdown timer
+                timeRemaining = 10 // reset the timer
+            }) {
+                Text("Start Countdown")
+                    .padding()
+            }
+        }
+        .onReceive(timer) { _ in
+            if timeRemaining > 0 {
+                timeRemaining -= 1
+            }
         }
     }
 }
-
 struct TimerView_Previews: PreviewProvider {
     static var previews: some View {
         TimerView()
