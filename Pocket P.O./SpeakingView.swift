@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct SpeakingView: View {
+    @Binding var names: [Name]
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            ForEach(names.filter{$0.name != ""}.sort{$0.speakingOrder}, id: \.self) { name in
+                Text(name.name)
+            }
+            .onMove { from, to in
+               // names.move(fromOffsets: indices, toOffset: newOffset)
+            }
+        }
+        .navigationBarItems(trailing: EditButton())
     }
 }
 
 struct SpeakingView_Previews: PreviewProvider {
     static var previews: some View {
-        SpeakingView()
+        //SpeakingView(names: [Name]())
+    ContentView()
     }
 }

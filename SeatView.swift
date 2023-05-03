@@ -79,9 +79,9 @@ struct CustomTextField: View {
     }
 }
 
-struct Name {
+struct Name: Hashable {
     var name = ""
     var color = Color.black
-    
+    var speakingOrder = 0
 }
 
