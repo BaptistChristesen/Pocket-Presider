@@ -11,11 +11,12 @@ struct SpeakingView: View {
     @Binding var names: [Name]
     var body: some View {
         List {
-            ForEach(names.filter{$0.name != ""}.sort{$0.speakingOrder}, id: \.self) { name in
+//            ForEach(names.filter{$0.name != ""}.sort{$0.speakingOrder}, id: \.self) { name in
+              ForEach(names, id: \.self) { name in
                 Text(name.name)
             }
-            .onMove { from, to in
-               // names.move(fromOffsets: indices, toOffset: newOffset)
+            .onMove { indices, newOffset in
+               names.move(fromOffsets: indices, toOffset: newOffset)
             }
         }
         .navigationBarItems(trailing: EditButton())
@@ -25,6 +26,6 @@ struct SpeakingView: View {
 struct SpeakingView_Previews: PreviewProvider {
     static var previews: some View {
         //SpeakingView(names: [Name]())
-    ContentView()
+        ContentView()
     }
 }
