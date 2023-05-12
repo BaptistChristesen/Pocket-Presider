@@ -11,7 +11,6 @@ import SwiftUI
         var body: some View {
             ZStack {
                 VStack {
-                    Image("gavel2").resizable().frame(width: 150, height: 150)
                     Text("Instructions & Tips").font(.title)
                     VStack (alignment: .leading) {
                         Text("Talk to people once you enter the chamber and try to get on their good side, give them the impression that you are a nice person")
