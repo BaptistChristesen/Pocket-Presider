@@ -40,7 +40,7 @@ struct ContentView: View {
                        .fontWeight(.heavy)
                        .foregroundColor(.blue)
                }
-               HStack{
+               //HStack{
                    NavigationLink {
                        SeatView(names: $names)
                    } label: {
@@ -53,8 +53,8 @@ struct ContentView: View {
                        CustomButton(text: "PO Instructions")
                            .controlSize(.mini)
                    }
-               }
-               HStack{
+               //}
+               //HStack{
                    NavigationLink {
                        SpeakingView(names: $names)
                    } label: {
@@ -65,7 +65,7 @@ struct ContentView: View {
                    } label: {
                        CustomButton(text: "Speaking Timers")
                    }
-               }
+               //}
            }
            .frame(maxWidth: .infinity, maxHeight: .infinity)
            .ignoresSafeArea(.all)        }
